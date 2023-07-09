@@ -18,12 +18,7 @@ print(classNames)
 
 
 def encoder(images):
-    """This Function will take images from Training _Images Directory and ony by one will convert their color format to RGB and
-    then process that converted image to obtain face encodings and append them to a list for Face Encodings.
-    :argument list images: List of images to be Encoded
-    :returns: List of face encodings of all Input Images
-    :rtype : list
-    """
+
     encodelist = []
     for img in images:
         img = cv.cvtColor(img,cv.COLOR_BGR2RGB)
@@ -32,12 +27,7 @@ def encoder(images):
     return encodelist
 
 def markAttendance(name):
-    """This function will store the records for Recognised faces and also will ignore duplicate entries. The records will be appended in a
-    Attendance Sheet which can later be accessed.
-    :argument str name: Name to be added in Attendance
-    :rtype : file
-    :returns : Attendance Sheet in form of a Attendance.csv file
-    """
+    
 
     with open('Attendance.csv', 'r+') as f:
         myDataList = f.readlines()

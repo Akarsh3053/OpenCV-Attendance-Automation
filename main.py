@@ -27,7 +27,7 @@ def encoder(images):
     return encodelist
 
 def markAttendance(name):
-    file = 'Attendance_Data/'+date.today()+'.csv'
+    file = 'Attendance_Data/'+str(date.today())+'.csv'
     with open(file, 'a+') as f:
         myDataList = f.readlines()
         nameList = []

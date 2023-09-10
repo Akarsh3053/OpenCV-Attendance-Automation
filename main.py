@@ -2,7 +2,7 @@ import cv2 as cv
 import face_recognition
 import numpy as np
 import os
-from datetime import datetime
+from datetime import datetime, date
 
 path = 'Training_Images'
 images = []
@@ -27,9 +27,8 @@ def encoder(images):
     return encodelist
 
 def markAttendance(name):
-    
-
-    with open('Attendance.csv', 'r+') as f:
+    file = 'Attendance_Data/'+date.today()+'.csv'
+    with open(file, 'a+') as f:
         myDataList = f.readlines()
         nameList = []
         for line in myDataList:

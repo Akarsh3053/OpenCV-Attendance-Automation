@@ -11,4 +11,4 @@ def view_records(file_name):
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 
-view_records('Attendance_Data/2023-09-10.csv')
+# view_records('Attendance_Data/2023-10-18.csv')   // Testing will continue later 

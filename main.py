@@ -8,6 +8,10 @@ path = 'Training_Images'
 images = []
 classNames = []
 img_list = os.listdir(path)
+file = 'Attendance_Data/'+str(date.today())+'.csv'
+f = open(file, 'a+')
+f.writelines("Name,Time")
+f.close()
 
 
 for cl in img_list:
@@ -28,16 +32,16 @@ def encoder(images):
 
 def markAttendance(name):
     file = 'Attendance_Data/'+str(date.today())+'.csv'
-    with open(file, 'a+') as f:
+    with open(file, 'r+') as f:
         myDataList = f.readlines()
         nameList = []
         for line in myDataList:
             entry = line.split(',')
             nameList.append(entry[0])
         if name not in nameList:
-                now = datetime.now()
-                dtString = now.strftime('%H:%M:%S')
-                f.writelines(f'\n{name},{dtString}')
+            now = datetime.now()
+            dtString = now.strftime('%H:%M:%S')
+            f.writelines(f'\n{name},{dtString}')
 
 
 processed_faces = encoder(images)

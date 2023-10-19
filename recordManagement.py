@@ -13,7 +13,6 @@ def view_records(file_name):
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 
-# view_records('Attendance_Data/2023-10-18.csv')   // Testing will continue later 
 
 def list_records(directory):
     try:
@@ -32,7 +31,6 @@ def list_records(directory):
     except Exception as e:
         print("An error occurred: ", e)
 
-# list_files("Attendance_Data")    /// Testing Will continue later 
 
 def add_records(name):
     file = 'Attendance_Data/'+str(date.today())+'.csv'
@@ -46,3 +44,15 @@ def add_records(name):
             now = datetime.now()
             dtString = now.strftime('%H:%M:%S')
             f.writelines(f'\n{name},{dtString}')
+
+
+def remove_person(filename):
+    try:
+        if os.path.isfile(filename):
+            os.remove(filename)
+            print(f'File {filename} has been removed.')
+        else:
+            print(f'File {filename} does not exist.')
+    except Exception as e:
+        print(f'An error occurred while deleting {filename}: {str(e)}')
+

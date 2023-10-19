@@ -16,6 +16,11 @@
 # Screenshots
  <img src="https://thestempedia.com/wp-content/uploads/2020/08/Face-recognition_attendance-system_thumbanail.png">
 
+
+ # Announcement 
+ - Updating the code to a new version with a Tkinter based GUI!!!!
+ Coming Sooon!!!!!!!
+
 # Tech Used
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 

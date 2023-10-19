@@ -9,9 +9,17 @@ images = []
 classNames = []
 img_list = os.listdir(path)
 file = 'Attendance_Data/'+str(date.today())+'.csv'
-# f = open(file, 'a+')
-# f.writelines("Name,Time")      /// Dummy code to be fixed later 
-# f.close()
+
+def record_check(filename):
+    if not os.path.isfile(filename):
+        with open(filename, 'w') as f:
+            print(f'File {filename} created.')
+    else:
+        print(f'File {filename} already exists.')
+
+# Creating and validating record file
+record_check(file)
+
 
 
 for cl in img_list:

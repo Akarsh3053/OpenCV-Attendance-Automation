@@ -13,6 +13,7 @@
 - Lightweight and easy to deploy
 - Organised Attendance records with Timestamping
 - Plain Template for easy customization and feature upgrades
+- GUI for easy operations
 # Screenshots
  <img src="https://thestempedia.com/wp-content/uploads/2020/08/Face-recognition_attendance-system_thumbanail.png">
 

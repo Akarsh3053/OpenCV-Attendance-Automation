@@ -27,7 +27,7 @@ class Application(ttk.Frame):
 
     def start_face_recognition(self):
         # Here you can add the code to start the face recognition process
-        messagebox.showinfo("Info","Face recognition started")
+        messagebox.showinfo("Info","Face recognition initialised!!!")
 
 root = tk.Tk()
 app = Application(master=root)

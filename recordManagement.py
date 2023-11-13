@@ -3,6 +3,7 @@ import os
 from datetime import datetime, date
 
 def view_records(file_name):
+    '''Fetch records from stored csv files.'''
     try:
         with open(file_name, 'r') as file:
             reader = csv.reader(file)
@@ -15,6 +16,7 @@ def view_records(file_name):
 
 
 def list_records(directory):
+    ''' Returns all the stored csv files in a records directory.'''
     try:
         # Check if the directory exists
         if not os.path.exists(directory):
@@ -26,10 +28,11 @@ def list_records(directory):
             return
         # List all files in the directory
         files = os.listdir(directory)
-        for file in files:
-            print(file)
+
     except Exception as e:
         print("An error occurred: ", e)
+
+    return files
 
 
 def add_records(name):

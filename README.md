@@ -14,6 +14,7 @@
 - Organised Attendance records with Timestamping
 - Plain Template for easy customization and feature upgrades
 - GUI for easy operations
+- Integrated Database for reliable record keeping.
 
 
  # Announcement 

@@ -23,8 +23,11 @@ def findEncodings(imageList):
         encode = face_recognition.face_encodings(img)[0]
         encodeList.append(encode)
 
+    return encodeList
+
 
 encodeListKnown = findEncodings(imgList)
+faceEncodings_withId = [encodeListKnown, studentIds]
 
 file = open("FaceEncodings.p", 'wb')
 pickle.dump(encodeListKnown, file)

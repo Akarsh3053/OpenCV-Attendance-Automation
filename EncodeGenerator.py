@@ -30,7 +30,7 @@ encodeListKnown = findEncodings(imgList)
 faceEncodings_withId = [encodeListKnown, studentIds]
 
 file = open("FaceEncodings.p", 'wb')
-pickle.dump(encodeListKnown, file)
+pickle.dump(faceEncodings_withId, file)
 file.close()
 
 

@@ -11,7 +11,7 @@ firebase_admin.initialize_app(cred, {
 ref = db.reference('Students')
 
 data = {
-    "312654":
+    "28442":
     {
         "name": "Akarsh Bajpai",
         "major": "Computer Science",
@@ -20,7 +20,17 @@ data = {
         "standing": "E",
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:34"
-    }
+    },
+    "28523":
+    {
+        "name": "Mahi Srivastava",
+        "major": "Digital Marketing",
+        "starting_year": 2020,
+        "total_attendance": 26,
+        "standing": "A",
+        "year": 4,
+        "last_attendance_time": "2023-11-20 00:54:36"
+    },
 }
 
 

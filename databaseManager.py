@@ -14,7 +14,7 @@ data = {
     "28442":
     {
         "name": "Akarsh Bajpai",
-        "major": "Computer Science",
+        "major": "CSE",
         "starting_year": 2020,
         "total_attendance": 77,
         "standing": "E",
@@ -24,7 +24,7 @@ data = {
     "28523":
     {
         "name": "Mahi Srivastava",
-        "major": "Digital Marketing",
+        "major": "Economics",
         "starting_year": 2020,
         "total_attendance": 26,
         "standing": "A",

@@ -39,6 +39,7 @@ encodeListKnown, studentIds = faceEncodings_withId
 modeType = 0
 counter = 0
 id = -1
+imgStudent = []
 
 # Face Detection and background rendering
 while True:
@@ -76,6 +77,13 @@ while True:
             studentInfo = db.reference(f'Students/{stId}').get()
             # Get image from bucket
             blob = bucket.get_blob(f'Images/{stId}.jpg')
+            array = np.frombuffer(blob.download_as_string(), np.uint8)
+            imgStudent = cv2.imdecode(array, cv2.COLOR_BGR2RGB)
+            imgStudent = cv2.resize(imgStudent,(216,216))
+            # Updating attendance data
+            ref = db.reference(f'Students/{stId}')
+            studentInfo['total_attendance'] += 1
+            ref.child('total_attendance').set(studentInfo['total_attendance'])
 
         cv2.putText(imgBackground, str(studentInfo['total_attendance']),(861,125),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),1)
         cv2.putText(imgBackground, str(studentInfo['major']),(1006,550),cv2.FONT_HERSHEY_COMPLEX,0.5,(255,255,255),1)
@@ -87,6 +95,8 @@ while True:
         (w,h), _ = cv2.getTextSize(studentInfo['name'],cv2.FONT_HERSHEY_COMPLEX,1,1)
         offset = (414-w)//2
         cv2.putText(imgBackground, str(studentInfo['name']), (808+offset, 445), cv2.FONT_HERSHEY_COMPLEX, 1, (50, 50, 50), 1)
+
+        imgBackground[175:175+216, 909:909+216] = imgStudent
 
 
 

@@ -33,10 +33,20 @@ data = {
     },
 "28722":
     {
-        "name": "Mahi Srivastava",
+        "name": "Kopal Trivedi",
         "major": "History",
         "starting_year": 2020,
         "total_attendance": 5,
+        "standing": "C",
+        "year": 4,
+        "last_attendance_time": "2023-11-20 00:54:36"
+    },
+"28412":
+    {
+        "name": "Siddhant Yadav",
+        "major": "Music",
+        "starting_year": 2020,
+        "total_attendance":0,
         "standing": "C",
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"

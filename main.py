@@ -82,7 +82,7 @@ while True:
             if counter ==1:
                 studentInfo = db.reference(f'Students/{stId}').get()
                 # Get image from bucket
-                blob = bucket.get_blob(f'Images/{stId}.jpg')
+                blob = bucket.get_blob(f'Images/{stId}.png')
                 array = np.frombuffer(blob.download_as_string(), np.uint8)
                 imgStudent = cv2.imdecode(array, cv2.COLOR_BGR2RGB)
                 imgStudent = cv2.resize(imgStudent,(216,216))

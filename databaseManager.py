@@ -16,7 +16,7 @@ data = {
         "name": "Akarsh Bajpai",
         "major": "CSE",
         "starting_year": 2020,
-        "total_attendance": 77,
+        "total_attendance": 5,
         "standing": "E",
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:34"
@@ -24,9 +24,9 @@ data = {
     "28523":
     {
         "name": "Mahi Srivastava",
-        "major": "Economics",
+        "major": "AIML",
         "starting_year": 2020,
-        "total_attendance": 26,
+        "total_attendance": 22,
         "standing": "A",
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
@@ -34,9 +34,9 @@ data = {
 "28722":
     {
         "name": "Kopal Trivedi",
-        "major": "History",
+        "major": "AIML",
         "starting_year": 2020,
-        "total_attendance": 5,
+        "total_attendance": 0,
         "standing": "C",
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
@@ -44,7 +44,7 @@ data = {
 "28412":
     {
         "name": "Siddhant Yadav",
-        "major": "Music",
+        "major": "AI",
         "starting_year": 2020,
         "total_attendance":0,
         "standing": "C",

@@ -50,6 +50,26 @@ data = {
         "standing": "C",
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
+    },
+"28372":
+    {
+        "name": "Shobhit Tiwari",
+        "major": "AIML",
+        "starting_year": 2020,
+        "total_attendance":23,
+        "standing": "B",
+        "year": 4,
+        "last_attendance_time": "2023-11-20 00:54:36"
+    },
+"29164":
+    {
+        "name": "Harsh Srivastava",
+        "major": "AIML",
+        "starting_year": 2020,
+        "total_attendance":9,
+        "standing": "A",
+        "year": 4,
+        "last_attendance_time": "2023-11-20 00:54:36"
     }
 }
 

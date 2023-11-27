@@ -70,6 +70,26 @@ data = {
         "standing": "A",
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
+    },
+"29329":
+    {
+        "name": "Monal Kapoor",
+        "major": "AI",
+        "starting_year": 2020,
+        "total_attendance":5,
+        "standing": "A",
+        "year": 4,
+        "last_attendance_time": "2023-11-20 00:54:36"
+    },
+"29164":
+    {
+        "name": "Nidhi Singh",
+        "major": "AIML",
+        "starting_year": 2020,
+        "total_attendance":8,
+        "standing": "A",
+        "year": 4,
+        "last_attendance_time": "2023-11-20 00:54:36"
     }
 }
 

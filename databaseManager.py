@@ -81,13 +81,23 @@ data = {
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
     },
-"29164":
+"28480":
     {
         "name": "Nidhi Singh",
         "major": "AIML",
         "starting_year": 2020,
         "total_attendance":8,
         "standing": "A",
+        "year": 4,
+        "last_attendance_time": "2023-11-20 00:54:36"
+    },
+"28858":
+    {
+        "name": "Atul Singh",
+        "major": "AIML",
+        "starting_year": 2020,
+        "total_attendance":2,
+        "standing": "B",
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
     }

@@ -100,6 +100,16 @@ data = {
         "standing": "B",
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
+    },
+"28356":
+    {
+        "name": "Bhavya Verma",
+        "major": "AIML",
+        "starting_year": 2020,
+        "total_attendance":25,
+        "standing": "B+",
+        "year": 4,
+        "last_attendance_time": "2023-11-20 00:54:36"
     }
 }
 

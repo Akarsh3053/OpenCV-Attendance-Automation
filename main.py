@@ -8,6 +8,7 @@ import cvzone
 import firebase_admin
 from firebase_admin import credentials, storage, db
 
+# Firebase config
 cred = credentials.Certificate("admin-service-key.json")
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://iris-attendance-module-default-rtdb.asia-southeast1.firebasedatabase.app/',
@@ -16,13 +17,14 @@ firebase_admin.initialize_app(cred, {
 
 bucket = storage.bucket()
 
+
+# Image Capture config
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)
 cap.set(4, 480)
 
-imgBackground = cv2.imread('Resources/background.png')
-
 # Loading mode graphics for attendance system
+imgBackground = cv2.imread('Resources/background.png')
 folderModePath = 'Resources/Modes'
 modePathList = os.listdir(folderModePath)
 imgModeList = []
@@ -101,15 +103,15 @@ while True:
 
             if modeType != 3:
 
-                if 10 < counter <20:
+                if 20 < counter <30:
                     modeType = 2
 
                 imgBackground[44:44 + 633, 808:808 + 414] = imgModeList[modeType]
 
-                if counter <= 10:
+                if counter <= 20:
                     cv2.putText(imgBackground, str(studentInfo['total_attendance']),(861,125),cv2.FONT_HERSHEY_COMPLEX,1,(255,255,255),1)
-                    cv2.putText(imgBackground, str(studentInfo['major']),(1006,550),cv2.FONT_HERSHEY_COMPLEX,0.5,(255,255,255),1)
-                    cv2.putText(imgBackground, str(stId),(1006,493),cv2.FONT_HERSHEY_COMPLEX,0.5,(255,255,255),1)
+                    cv2.putText(imgBackground, str(studentInfo['major']),(1020,553),cv2.FONT_HERSHEY_PLAIN,1,(255,255,255),2)
+                    cv2.putText(imgBackground, str(stId),(1006,493),cv2.FONT_HERSHEY_SCRIPT_SIMPLEX,0.5,(255,255,255),2)
                     cv2.putText(imgBackground, str(studentInfo['standing']),(910,625),cv2.FONT_HERSHEY_COMPLEX,0.6,(100,100,100),1)
                     cv2.putText(imgBackground, str(studentInfo['year']),(1025,625),cv2.FONT_HERSHEY_COMPLEX,0.6,(100,100,100),1)
                     cv2.putText(imgBackground, str(studentInfo['starting_year']),(1125,625),cv2.FONT_HERSHEY_COMPLEX,0.6,(100,100,100),1)
@@ -122,7 +124,7 @@ while True:
 
                 counter += 1
 
-                if counter >= 20:
+                if counter >= 30:
                     counter = 0
                     modeType = 0
                     studentInfo = []

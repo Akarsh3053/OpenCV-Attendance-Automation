@@ -41,16 +41,6 @@ data = {
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
     },
-    "28412":
-    {
-        "name": "Siddhant Yadav",
-        "major": "AI",
-        "starting_year": 2020,
-        "total_attendance":0,
-        "standing": "C",
-        "year": 4,
-        "last_attendance_time": "2023-11-20 00:54:36"
-    },
     "28372":
     {
         "name": "Shobhit Tiwari",
@@ -113,11 +103,11 @@ data = {
     },
     "28813":
     {
-        "name": "Anuj Madarchod",
-        "major": "BC",
+        "name": "Anuj Tiwari",
+        "major": "IT",
         "starting_year": 2020,
-        "total_attendance":25,
-        "standing": "X+",
+        "total_attendance":2,
+        "standing": "A",
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
     }

@@ -31,7 +31,7 @@ data = {
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
     },
-"28722":
+    "28722":
     {
         "name": "Kopal Trivedi",
         "major": "AIML",
@@ -41,7 +41,7 @@ data = {
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
     },
-"28412":
+    "28412":
     {
         "name": "Siddhant Yadav",
         "major": "AI",
@@ -51,7 +51,7 @@ data = {
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
     },
-"28372":
+    "28372":
     {
         "name": "Shobhit Tiwari",
         "major": "AIML",
@@ -61,7 +61,7 @@ data = {
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
     },
-"29164":
+    "29164":
     {
         "name": "Harsh Srivastava",
         "major": "AIML",
@@ -71,7 +71,7 @@ data = {
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
     },
-"29329":
+    "29329":
     {
         "name": "Monal Kapoor",
         "major": "AI",
@@ -81,7 +81,7 @@ data = {
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
     },
-"28480":
+    "28480":
     {
         "name": "Nidhi Singh",
         "major": "AIML",
@@ -91,7 +91,7 @@ data = {
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
     },
-"28858":
+    "28858":
     {
         "name": "Atul Singh",
         "major": "AIML",
@@ -101,13 +101,23 @@ data = {
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
     },
-"28356":
+    "28356":
     {
         "name": "Bhavya Verma",
         "major": "AIML",
         "starting_year": 2020,
         "total_attendance":25,
         "standing": "B+",
+        "year": 4,
+        "last_attendance_time": "2023-11-20 00:54:36"
+    },
+    "28813":
+    {
+        "name": "Anuj Madarchod",
+        "major": "BC",
+        "starting_year": 2020,
+        "total_attendance":25,
+        "standing": "X+",
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
     }

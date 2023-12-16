@@ -110,6 +110,16 @@ data = {
         "standing": "A",
         "year": 4,
         "last_attendance_time": "2023-11-20 00:54:36"
+    },
+    "234":
+    {
+        "name": "Abhijeet Sir",
+        "major": "PSIT",
+        "starting_year": 2020,
+        "total_attendance":0,
+        "standing": "A",
+        "year": 4,
+        "last_attendance_time": "2023-11-20 00:54:36"
     }
 }
 
